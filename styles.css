@@ -1,9 +1,11 @@
-@media screen and (max-width: 320px){
-    .note1{
-        font-size: 11px;
+@media screen and (min-width: 320px) and (max-width: 550px){
+    body{
+        background-color: blueviolet;
+        color: white;
     }
- 
 }
+ 
+
 
 body{
     background-color: black;
@@ -19,14 +21,14 @@ h1{
     
 }
 
-.note1{
+p{
     width: 50%;
     height: auto;
     background-color: blueviolet;
     text-align: center;
     font-weight: bold;
     margin-left: 25%;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 
