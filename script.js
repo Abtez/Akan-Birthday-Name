@@ -6,7 +6,7 @@ function makeArray(n){
   }
 
 days=new makeArray(7);
-days[o]="Saturday"
+days[0]="Saturday"
 days[1]="Sunday"
 days[2]="Monday"
 days[3]="Tuesday"
@@ -45,6 +45,24 @@ if (val3<1850){
     alert("Are You That Old?")
 }
 
+if (val2==1){
+    val2a=13;
+    val3=val3-1
+}
+if (val2==2){
+    val2a=14;
+    val3=val3-1
+}
 
+var val4=parseInt(((val2a + 1)*3)/5, 10)
+var val5=parseInt(val3/4, 10)
+var val6=parseInt(val3/100, 10)
+var val7=parseInt(val3/400, 10)
+var val8=val1 + (val2a*7) + val4 + val5 + val6 + val7 + 2
+var val9=parseInt(val8/7, 10)
+var val0=val8 - (val9*7)
+
+form.result1.value=months[val2]+ "+ form.day.value +", "+form.year.value
+form.result2.value=days[val0]
 }
 

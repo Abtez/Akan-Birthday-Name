@@ -22,13 +22,29 @@
 
 
 
- <p class="text-responsive">Would you like to find out your Akan Name. Look no further;
+ <p class="text-responsive" id="text1">Would you like to find out your Akan Name. Look no further;
     enter your information on the form below to generate your 
     Akan name!</p>
 
+<div class="form-date">
+
+  <h3>Fill In The Form Below To Know Your Akan Name</h3>
+  <p>Click the submit after filling the form.</p>
+
+<form>
+
+  <p>MONTH (1-12)<input type="text" name="months" size="3"></p>
+  <p>DAY (1-31)<input type="text" name="days" size="3"></p>
+  <p>Year (eg 1980)<input type="text" name="year" size="4"></p>
+  <p><input type="button" value="Submit" onclick="compute(this.form)"><input type="reset" value="Clear"></p>
+  <p> Your Birthdate Is:<input type="text" name="result1" size="15"></p>
+  <p>Your Akan Name Is : <input type="text"> </p>
+
+</form>
+
 </div>
 
-
+</div>
 
 <script src="script.js"></script>
 <script src="js/bootstrap.min.js"></script>
