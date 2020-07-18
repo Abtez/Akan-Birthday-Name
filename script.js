@@ -30,7 +30,21 @@ months[12]="December"
 
 function compute(form){
     var val1=parseInt(form.day.value, 10)
-    if((val1<o)|| (val1>31)){
+    if((val1<0)|| (val1>31)){
         alert("Invalid Day Of Month. Please enter a value between 1 and 31")
     }
+
+var val2=parseInt(form.month.value, 10)
+if((val2<0) || (val2>12)){
+    alert("Incorrect Month Value. Please Try Again!")
+    }
+
+var val2a=parseInt(form.month.value, 10)
+var val3=parseInt(form.year.value, 10)
+if (val3<1850){
+    alert("Are You That Old?")
 }
+
+
+}
+
