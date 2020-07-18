@@ -27,3 +27,10 @@ months[9]="September"
 months[10]="October"
 months[11]="November"
 months[12]="December"
+
+function compute(form){
+    var val1=parseInt(form.day.value, 10)
+    if((val1<o)|| (val1>31)){
+        alert("Invalid Day Of Month. Please enter a value between 1 and 31")
+    }
+}
