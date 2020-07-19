@@ -53,6 +53,16 @@ function compute(event){
     var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
     console.log(ghanaNames);
    
-    
+    if (gender=== "male"){
+        alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + "And Your Akan Name Is : " + ghanaNames);
+        document.getElementById("result").innerHTML=names[date.getDay()];
+    }
+    else if (gnder=== "female"){
+        alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + "And Your Akan Name Is : " + ghanaNames);
+        document.getElementById("result").innerHTML=names[date.getDay()];
+    }
+    else{
+        alert("You seem to have entered the wrong information please try again!")
+    }
     
 }
