@@ -9,6 +9,13 @@ function compute(event){
     var form=new FormData(event.target);
     var day=form.get("day");
     var month=form.get("month");
+
+    if (day<0 || day>31){
+        alert("Incorrect Day!")
+    }
+    if (month<0 || month>12){
+        alert("Incorrect Month!")
+    }
     var year=form.get("year");
     var gender=form.get("gender");
     var names= {
