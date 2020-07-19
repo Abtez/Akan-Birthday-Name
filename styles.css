@@ -23,9 +23,10 @@
 
 
 body{
-    background-color: rgb(14, 13, 13);
-    color: white;
-    overflow: hidden;
+    background-image: url("/image/Ghana-2014-World-Cup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -37,6 +38,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 h1{
+    color: black;
     font-size: 5vw;
     font-family: "Audrey";
     font-weight: bold;
@@ -46,6 +48,8 @@ h1{
 }
 
 #text1{
+    background-color: rgba(153, 205, 50, 0.589);
+    color: black;
     width: 50%;
     height: auto;
     text-align: center;
@@ -56,6 +60,8 @@ h1{
 }
 
 h3{
+    color: black;
+    background-color: rgba(255, 255, 0, 0.644);
     font-family: "Audrey";
     font-weight: bold;
     font-size: 2vw;
@@ -66,7 +72,8 @@ h3{
 }
 
 #fill{
-    font-size: 1.3vw;
+    background-color: rgba(153, 205, 50, 0.342);
+    font-size: 1.5vw;
 }
 
 .label{
@@ -80,10 +87,12 @@ h3{
 }
 
 .males{
+    color: white;
     font-size: 1.5vw;
 }
 
 .fe-male{
+    color: white;
     font-size: 1.5vw;
 }
 
@@ -102,5 +111,9 @@ h3{
     padding: 2%;
 }
 
+.footer{
+    font-size: 1.3vw;
+
+}
 
 
