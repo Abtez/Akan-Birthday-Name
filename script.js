@@ -70,7 +70,7 @@ function compute(event){
     var daysOfTheWeek=Object.keys(names);
     var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
     console.log(ghanaNames);
-
+    
     
    
     if (gender=== "male"){
