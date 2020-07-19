@@ -5,8 +5,7 @@ function compute(event){
     event.preventDefault();
 
     var gender=document.getElementById("gender").value;
-    var date=document.getElementById("date").value;
-    date = new Date(date);
+    var day=document.getElementById("day").value;
     var form=new FormData(event.target);
     var day=form.get("day");
     var month=form.get("month");
@@ -54,11 +53,11 @@ function compute(event){
     console.log(ghanaNames);
    
     if (gender=== "male"){
-        alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + "And Your Akan Name Is : " + ghanaNames);
+        alert("You Were Born On A " + daysOfTheWeek[date.getDay()] +" " +"And Your Akan Name Is : " + ghanaNames);
         document.getElementById("result").innerHTML=names[date.getDay()];
     }
-    else if (gnder=== "female"){
-        alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + "And Your Akan Name Is : " + ghanaNames);
+    else if (gender=== "female"){
+        alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + " " +"And Your Akan Name Is : " + ghanaNames);
         document.getElementById("result").innerHTML=names[date.getDay()];
     }
     else{
