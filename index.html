@@ -30,7 +30,7 @@
 
 
   <h3 class="text-responsive">Fill In The Form Below To Know Your Akan Name</h3>
-  <p id="fill" class="text-center text-responsive">Click the submit after filling the form.</p>
+  <p id="fill" class="text-center text-responsive">"Click the submit after filling the form"</p>
 
 <form onsubmit="return compute(event)" autocomplete="off">
   
@@ -50,8 +50,9 @@
    </div>
 </div>
 
-
-<div class="inputs text-responsive">
+<div class="row">
+  <div class="col-md-12 bg-success">
+<div class="inputs text-responsive" style="margin-top: 4%;">
   <p>ENTER DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="3"></p>
   <p>ENTER MONTH (1-12)<input type="number" value=" " name="month" id="month" size="3"></p>
   <p>ENTER YEAR (eg 1980)<input value=" " type="number" name="year" id="year" size="4"></p>
@@ -59,7 +60,8 @@
 <p class="text-responsive text-center" id="submit"><input type="Submit" value="Submit"><input type="reset" value="Clear"></p>
 
 </form>
-
+  </div>
+  </div>
 </div>
 
 <script src="js/bootstrap.min.js"></script>
