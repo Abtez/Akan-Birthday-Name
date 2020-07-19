@@ -13,10 +13,22 @@ function compute(event){
     if (day<0 || day>31){
         alert("Incorrect Day!")
     }
+    if (day==""){
+        alert("Input Date!")
+    }
     if (month<0 || month>12){
         alert("Incorrect Month!")
     }
+    if (month==""){
+        alert("Input Month")
+    }
+    
     var year=form.get("year");
+
+    if (year=="") {
+        alert("Input Year")
+    }
+
     var gender=form.get("gender");
     var names= {
         Sunday: {
@@ -58,6 +70,8 @@ function compute(event){
     var daysOfTheWeek=Object.keys(names);
     var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
     console.log(ghanaNames);
+
+    
    
     if (gender=== "male"){
         alert("You Were Born On A " + daysOfTheWeek[date.getDay()] +" " +"And Your Akan Name Is : " + ghanaNames);
@@ -67,8 +81,9 @@ function compute(event){
         alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + " " +"And Your Akan Name Is : " + ghanaNames);
         document.getElementById("result").innerHTML=names[date.getDay()];
     }
-    else{
-        alert("You seem to have entered the wrong information please try again!")
+    else {
+        alert("Check details again!")
     }
-    
+   
 }
+    
