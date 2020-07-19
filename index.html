@@ -10,7 +10,7 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link style="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="icon" href="image/ghana-flag-round-icon-32.png" type="image/png">
 <title>Ghana Akan Name Birthday Generator</title>
@@ -48,9 +48,11 @@
   <p>ENTER DAY (1-31)<input type="text" value=" " name="day" size="3"></p>
   <p>ENTER YEAR (eg 1980)<input value=" " type="text" name="year" size="4"></p>
   <p><input type="Submit" value="Update"><input type="reset" value="Clear"></p>
-  <p> Your Birthdate Is:<input type="text" size="15"></p>
-  <p>Your Akan Name Is : <input type="text" onclick="compute(event)" size="15"></p>
+  <!--p>Your Akan Name Is : <input type="text" onclick="compute(event)" size="15"></p-->
 
+  <div class="" id="results">
+    <p>Akan <input type="text" onclick="compute(event)" size="15"> </p>
+  </div>
 </form>
 
 

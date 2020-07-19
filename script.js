@@ -4,7 +4,9 @@ function compute(event){
 
     event.preventDefault();
 
-
+    var gender=document.getElementById('gender').value;
+    var date = document.getElementById('date').value;
+    date = new Date(date);
     var form=new FormData(event.target);
     var day=form.get("day");
     var month=form.get("month");
@@ -53,5 +55,6 @@ function compute(event){
     var daysOfTheWeek=Object.keys(names);
     var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
     console.log(ghanaNames);
+    document.getElementById("results").innerHTML=ghanaNames[date.getDay()]
     
 }
