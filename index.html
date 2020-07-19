@@ -31,7 +31,7 @@
   <h3>Fill In The Form Below To Know Your Akan Name</h3>
   <p>Click the submit after filling the form.</p>
 
-<form>
+<form onsubmit="return compute(event)">
   <div class="form-group mb15">
     <label class="label">Gender</label>
      <div class="rdio rdio-default fs11">
@@ -44,10 +44,10 @@
    </div>
 </div>
 
-  <p>MONTH (1-12)<input type="text" name="month" size="3"></p>
-  <p>DAY (1-31)<input type="text" name="day" size="3"></p>
-  <p>Year (eg 1980)<input type="text" name="year" size="4"></p>
-  <p><input type="button" value="Update" onclick="compute(this.form)"><input type="reset" value="Clear"></p>
+  <p>ENTER MONTH (1-12)<input type="text" value="3" name="month" size="3"></p>
+  <p>ENTER DAY (1-31)<input type="text" value="3" name="day" size="3"></p>
+  <p>ENTER YEAR (eg 1980)<input value="2015" type="text" name="year" size="4"></p>
+  <p><input type="Submit" value="Update"><input type="reset" value="Clear"></p>
   <p> Your Birthdate Is:<input type="text" name="result1" size="15"></p>
   <p>Your Akan Name Is : <input type="text" name="result2" size="15"> </p>
 
@@ -55,55 +55,7 @@
 
 <script>
 
-  function MakeArray(n) {
-    this.length = n;
-    for (var i = 1; i <= n; i++) {
-      this[i] = 0;
-    }
-  }
-
-  months = new MakeArray(12);
-  months[1] = "January"
-  months[2] = "February"
-  months[3] = "March"
-  months[4] = "April"
-  months[5] = "May"
-  months[6] = "June"
-  months[7] = "July"
-  months[8] = "August"
-  months[9] = "September"
-  months[10] = "October"
-  months[11] = "November"
-  months[12] = "December"
-
-  
-  function compute(form) {
-    var val1 = parseInt(form.day.value, 10)
-    if ((val1 < 0) || (val1 > 31)) {
-      alert("Day is out of range")
-    }
-    var val2 = parseInt(form.month.value, 10)
-    if ((val2 < 0) || (val2 > 12)) {
-      alert("Month is out of range")
-    }
-    var val2x = parseInt(form.month.value, 10)
-    var val3 = parseInt(form.year.value, 10)
-    if (val3 < 1900) {
-      alert("You're that old!")
-    }
-    if (val2 == 1) {
-      val2x = 13;
-      val3 = val3 - 1
-    }
-    if (val2 == 2) {
-      val2x = 14;
-      val3 = val3 - 1
-    }
-
-    form.result1.value = months[val2] + " " + form.day.value + ", " + form.year.value
-   // form.result2.value = days[val0]
-  }
-
+ 
 </script>
 </div>
 

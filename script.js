@@ -1,5 +1,7 @@
 function compute(event){
+    console.log(event);
     event.preventDefaults();
+
 
     var form=new FormData(event.target);
     var day=form.get("day");
@@ -38,8 +40,12 @@ function compute(event){
         } 
     var date=[year,month,day].join("/");
     var date=new Date(date);
+    console.log(date);
     var dayOfweekBorn=date.getDay();
+    console.log(dayOfweekBorn);
     var dayOfTheWeek=Object.keys(names);
     var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
     console.log(ghanaName);
+    
+    
 }
