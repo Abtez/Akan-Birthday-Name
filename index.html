@@ -35,18 +35,18 @@
   <div class="genders" id="gender">
     <label class="label">Gender</label>
      <div class="males">
-      <input type="radio" name="gender" id="male" value="male">
+      <input type="radio" name="gender" id="male" value="male" required>
       <label for="male">&nbsp;&nbsp;Male</label>
   </div>
   <div class="fe-male">
-      <input type="radio" name="gender" value="female" id="female">
+      <input type="radio" name="gender" value="female" id="female" required>
       <label for="female">&nbsp;&nbsp;Female</label>
    </div>
 </div>
 
-  <p>ENTER DAY (1-31)<input type="text" value=" " name="day" id="day" size="3"></p>
-  <p>ENTER MONTH (1-12)<input type="text" value=" " name="month" id="month" size="3"></p>
-  <p>ENTER YEAR (eg 1980)<input value=" " type="text" name="year" id="year" size="4"></p>
+  <p>ENTER DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="3"></p>
+  <p>ENTER MONTH (1-12)<input type="number" value=" " name="month" id="month" size="3"></p>
+  <p>ENTER YEAR (eg 1980)<input value=" " type="number" name="year" id="year" size="4"></p>
   <p><input type="Submit" value="Update"><input type="reset" value="Clear"></p>
 
 </form>
