@@ -42,10 +42,7 @@ function compute(event){
         female: 'Ama'
         },
         } 
-    var date=[year,month,day].join("/");
-    //var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    //var d = new Date(dateString);
-    //var dayName = days[d.getDay()];
+    var date=[year,month,day]
     var date=new Date(date);
     console.log(date);
 
@@ -55,6 +52,7 @@ function compute(event){
     var daysOfTheWeek=Object.keys(names);
     var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
     console.log(ghanaNames);
-    document.getElementById("results").innerHTML=ghanaNames[date.getDay()]
+   
+    
     
 }

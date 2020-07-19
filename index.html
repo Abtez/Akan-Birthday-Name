@@ -31,30 +31,30 @@
   <h3>Fill In The Form Below To Know Your Akan Name</h3>
   <p>Click the submit after filling the form.</p>
 
-<form onsubmit="return compute(event)">
-  <div class="form-group mb15">
+<form onsubmit="return compute(event)" autocomplete="off">
+  <div class="genders" id="gender">
     <label class="label">Gender</label>
-     <div class="rdio rdio-default fs11">
+     <div class="males">
       <input type="radio" name="gender" id="male" value="male">
       <label for="male">&nbsp;&nbsp;Male</label>
   </div>
-  <div class="rdio rdio-default fs11">
+  <div class="fe-male">
       <input type="radio" name="gender" value="female" id="female">
       <label for="female">&nbsp;&nbsp;Female</label>
    </div>
 </div>
 
+  <p>ENTER DATE (1-31)<input type="text" value=" " name="date" size="3"></p>
   <p>ENTER MONTH (1-12)<input type="text" value=" " name="month" size="3"></p>
-  <p>ENTER DAY (1-31)<input type="text" value=" " name="day" size="3"></p>
   <p>ENTER YEAR (eg 1980)<input value=" " type="text" name="year" size="4"></p>
   <p><input type="Submit" value="Update"><input type="reset" value="Clear"></p>
-  <!--p>Your Akan Name Is : <input type="text" onclick="compute(event)" size="15"></p-->
 
   <div class="" id="results">
     <p>Akan <input type="text" onclick="compute(event)" size="15"> </p>
-  </div>
-</form>
 
+  </div>
+  
+</form>
 
 </div>
 
