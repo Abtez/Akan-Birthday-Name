@@ -4,8 +4,8 @@ function compute(event){
 
     event.preventDefault();
 
-    var gender=document.getElementById('gender').value;
-    var date = document.getElementById('date').value;
+    var gender=document.getElementById("gender").value;
+    var date=document.getElementById("date").value;
     date = new Date(date);
     var form=new FormData(event.target);
     var day=form.get("day");
