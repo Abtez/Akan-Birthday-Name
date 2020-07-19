@@ -68,7 +68,7 @@ Whatsapp : +254759507042
 
 ## LICENSE
 
-[MIT]()
+[MIT License Information.](https://github.com/Abzed/Akan-Birthday-Name/blob/master/License)
 
 
 
