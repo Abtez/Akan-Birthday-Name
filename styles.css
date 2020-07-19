@@ -61,15 +61,16 @@ h3{
     padding: 3%;
 }
 
+.gender-gender{
+    
+}
+
 .males{
     font-size: 1.5vw;
-    padding: 1%;
 }
 
 .fe-male{
     font-size: 1.5vw;
-    padding: 1%;
-
 }
 
 .inputs{
@@ -78,8 +79,14 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-
 }
+
+#submit{
+    color: black;
+    font-size: 1.5vw;
+    padding: 2%;
+}
+
 
 
 
