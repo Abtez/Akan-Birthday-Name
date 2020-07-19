@@ -33,24 +33,30 @@
   <p id="fill" class="text-center text-responsive">Click the submit after filling the form.</p>
 
 <form onsubmit="return compute(event)" autocomplete="off">
+  
   <div class="genders text-responsive text-center" id="gender">
     <label class="label text-responsive">Gender</label>
+      
+  <div class="gender-gender">
      <div class="males text-responsive">
       <input type="radio" name="gender" id="male" value="male" required>
       <label for="male">&nbsp;&nbsp;Male</label>
   </div>
+  </div>
+
   <div class="fe-male text-responsive">
       <input type="radio" name="gender" value="female" id="female" required>
       <label for="female">&nbsp;&nbsp;Female</label>
    </div>
 </div>
 
+
 <div class="inputs text-responsive">
   <p>ENTER DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="3"></p>
   <p>ENTER MONTH (1-12)<input type="number" value=" " name="month" id="month" size="3"></p>
   <p>ENTER YEAR (eg 1980)<input value=" " type="number" name="year" id="year" size="4"></p>
-  <p><input type="Submit" value="Submit"><input type="reset" value="Clear"></p>
 </div>
+<p><input type="Submit" value="Submit"><input type="reset" value="Clear"></p>
 
 </form>
 
