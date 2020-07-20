@@ -47,35 +47,36 @@
     </div>
 
     <div class="container" id="two">
-      right txt
+
+      <p class="text-center">Fill the form below then click<br> submit to know the akan name<br> of 
+        any day of the calender</p>
+        <form onsubmit="return compute(event)" autocomplete="off">
+  
+          <div class="genders text-responsive text-center" id="gender">
+            <label class="label text-responsive">Gender</label>
+              
+          <div class="gender-gender">
+             <div class="males text-responsive">
+              <input type="radio" name="gender" id="male" value="male" required>
+              <label for="male">&nbsp;&nbsp;Male</label>
+          
+        
+          <div class="fe-male text-responsive">
+              <input type="radio" name="gender" value="female" id="female" required>
+              <label for="female">&nbsp;&nbsp;Female</label>
+           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+      <div class="inputs text-responsive" style="margin-top: 4%;">
+        <p>DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="2" required></p>
+        <p>MONTH (1-12)<input type="number" value=" " name="month" id="month" size="2" required></p>
+        <p>YEAR (Min-1900)<input value=" " type="number" name="year" id="year" size="3" required></p>
+      </div>
     </div>
 
- <form onsubmit="return compute(event)" autocomplete="off">
-  
-  <div class="genders text-responsive text-center" id="gender">
-    <label class="label text-responsive">Gender</label>
-      
-  <div class="gender-gender">
-     <div class="males text-responsive">
-      <input type="radio" name="gender" id="male" value="male" required>
-      <label for="male">&nbsp;&nbsp;Male</label>
-  
 
-  <div class="fe-male text-responsive">
-      <input type="radio" name="gender" value="female" id="female" required>
-      <label for="female">&nbsp;&nbsp;Female</label>
-   </div>
-</div>
-</div>
-</div>
-
-<div class="row">
-  <div class="col-md-12 bg-success">
-<div class="inputs text-responsive" style="margin-top: 4%;">
-  <p>ENTER DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="3"></p>
-  <p>ENTER MONTH (1-12)<input type="number" value=" " name="month" id="month" size="3"></p>
-  <p>ENTER YEAR (eg 1980)<input value=" " type="number" name="year" id="year" size="4"></p>
-</div>
 
 <p class="text-responsive text-center" id="submit"><input type="Submit" value="Submit"><input type="reset" value="Clear"></p>
 <div class="footer text-center text-responsive">Copyright (c) 2020 Abzed Abdul Mohammed</div>

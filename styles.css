@@ -69,57 +69,15 @@ a{
     letter-spacing: 0.17em;
 }
 
-
-h3{
-    color: black;
-    background-color: rgba(255, 255, 0, 0.644);
-    font-family: "Audrey";
-    font-weight: bold;
-    font-size: 2vw;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    text-decoration: underline;
-}
-
-#fill{
-    background-color: rgba(153, 205, 50, 0.342);
+#two{
+    width: 45%;
+    height: auto;
+    background-color: rgba(4, 252, 16, 0.596);
+    float: right;
     font-size: 1.5vw;
-}
-
-.label{
-    font-size: 1.8vw;
     padding: 3%;
-    text-decoration: underline;
+    
 }
-
-.males{
-    color: black;
-    font-size: 1.5vw;
-}
-
-.fe-male{
-    color: black;
-    font-size: 1.5vw;
-}
-
-.inputs{
-    color: black;
-    font-size: 1.1vw;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-}
-
-#submit{
-    color: black;
-    font-size: 1.5vw;
-    padding: 2%;
-}
-
-.footer{
-    font-size: 1.3vw;
 
 }
 
