@@ -1,9 +1,9 @@
 
 function compute(event){
-    console.log(event);
-
     event.preventDefault();
 
+    //var x = document.getElementById("myDate").value;
+    //document.getElementById("demo").innerHTML = x;
     var gender=document.getElementById("gender").value;
     var day=document.getElementById("day").value;
     var form=new FormData(event.target);
@@ -13,17 +13,24 @@ function compute(event){
     if (day<0 || day>31){
         alert("Incorrect Day!")
     }
+
     if (day==""){
         alert("Input Date!")
     }
+
     if (month<0 || month>12){
         alert("Incorrect Month!")
     }
+
     if (month==""){
         alert("Input Month")
     }
     
     var year=form.get("year");
+
+    if (year.length != 4) {
+        alert("Incorrect Year");
+    }
 
     if (year=="") {
         alert("Input Year")
@@ -62,22 +69,15 @@ function compute(event){
         } 
     var date=[year,month,day]
     var date=new Date(date);
-    console.log(date);
-
     var dayOfweekBorn=date.getDay();
-    console.log(dayOfweekBorn);
-
     var daysOfTheWeek=Object.keys(names);
-    var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];
-    console.log(ghanaNames);
+    var ghanaNames=names[daysOfTheWeek[dayOfweekBorn]][gender];  
     
-    
-   
-    if (gender=== "male"){
+    if (gender=== "male" && year>=1900 && day==1 && day<=31 && month==1 && month<=12){
         alert("You Were Born On A " + daysOfTheWeek[date.getDay()] +" " +"And Your Akan Name Is : " + ghanaNames);
         document.getElementById("result").innerHTML=names[date.getDay()];
     }
-    else if (gender=== "female"){
+    else if (gender=== "female" && year>=1900 && day==1 && day<=31 && month==1 && month<=12){
         alert("You Were Born On A " + daysOfTheWeek[date.getDay()] + " " +"And Your Akan Name Is : " + ghanaNames);
         document.getElementById("result").innerHTML=names[date.getDay()];
     }
