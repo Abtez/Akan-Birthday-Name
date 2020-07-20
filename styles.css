@@ -1,4 +1,4 @@
-@media only screen and (min-width: 319px) and (max-width: 550px){
+/*@media only screen and (min-width: 319px) and (max-width: 550px){
     body{
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
@@ -14,19 +14,12 @@
     .inputs{
         float: left;
 
-    }
-
-
-
-}
- 
-
+    }*/
 
 body{
-    background-image: url("/image/Ghana-2014-World-Cup.jpg");
+    background-image: url("/image/gh.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    color: black;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -39,25 +32,31 @@ input[type=number]::-webkit-outer-spin-button {
 
 h1{
     color: black;
-    font-size: 5vw;
+    font-size: 3.7vw;
     font-family: "Audrey";
     font-weight: bold;
-    margin-left: 7%;
-    margin-top: 3%;
+    margin-top: 1.5%;
+    text-decoration: underline; 
+}
+
+#navy{
+    width: 100%;
+    height: 5%;
+    background-color: #ff000088;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-around;
     
 }
 
-#text1{
-    background-color: rgba(153, 205, 50, 0.589);
+a{
+    text-decoration-style: none;
     color: black;
-    width: 50%;
-    height: auto;
-    text-align: center;
-    margin-left: 25%;
-    font-size: 1.5vw;
-    border: 2px solid brown;
-    padding: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+
 }
+
 
 h3{
     color: black;
@@ -80,10 +79,6 @@ h3{
     font-size: 1.8vw;
     padding: 3%;
     text-decoration: underline;
-}
-
-.gender-gender{
-    
 }
 
 .males{
