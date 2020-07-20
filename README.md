@@ -26,15 +26,15 @@ Akan names are derived from Ghanian culture. Frequently in Ghana, children are g
 
 * Navigate to the download location then extract the zip file to your desired location.
 
-* Right click on folder and navigate to "open with another application" and select your code editor.
+* Right click on folder and navigate to "open with another application" and select your code editor and run the codes on your machine.
 
-* Or you can access the web application directly using this [link](https://github.com/Abzed/Akan-Birthday-Name).
+* Or you can access the web application directly using this [live link](https://abzed.github.io/Akan-Birthday-Name/).
 
 ### Mobile Devices
 
-* For mobile users Click on the link below to access the web application directly on your devices.
+* For mobile users Click on the live link below to access the web application directly on your devices.
 
-  [Akan-Ghana-Names Project](https://github.com/Abzed/Akan-Birthday-Name).
+  [Akan-Ghana-Names Project](https://abzed.github.io/Akan-Birthday-Name/).
 
 *****
 
