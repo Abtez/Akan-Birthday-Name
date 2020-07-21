@@ -48,12 +48,12 @@
 
     <div class="container" id="two">
 
-      <p class="text-center">Fill the form below then click<br> submit to know the akan name<br> of 
+      <p class="text-center">Fill the form below then click submit to know the akan name<br> of 
         any day of the calender</p>
         <form onsubmit="return compute(event)" autocomplete="off">
   
           <div class="genders text-responsive text-center" id="gender">
-            <label class="label text-responsive">Gender</label>
+            <label style="color: black;font-size: 1.6vw;" class="label text-responsive">Gender</label>
               
           <div class="gender-gender">
              <div class="males text-responsive">
@@ -67,23 +67,24 @@
            </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12">
       <div class="inputs text-responsive" style="margin-top: 4%;">
-        <p>DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="2" required></p>
-        <p>MONTH (1-12)<input type="number" value=" " name="month" id="month" size="2" required></p>
-        <p>YEAR (Min-1900)<input value=" " type="number" name="year" id="year" size="3" required></p>
+        <p>DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" required></p>
+        <p>MONTH (1-12)<input type="number" value=" " name="month" id="month" required></p>
+        <p>YEAR (Min-1900)<input value=" " type="number" name="year" id="year" required></p>
+      </div>
+
+      <div class="row text-center" id="last">
+          <p class="text-responsive text-center" style="padding: 3%;" id="submit"><input type="Submit" value="Submit">
+            <input type="reset" value="Clear"></p>
       </div>
     </div>
-
-
-
-<p class="text-responsive text-center" id="submit"><input type="Submit" value="Submit"><input type="reset" value="Clear"></p>
-<div class="footer text-center text-responsive">Copyright (c) 2020 Abzed Abdul Mohammed</div>
-
+  <div class="text-responsive">Your AKAN Name Is : <p style="font-size: 1.7vw;font-weight: bolder;" id="result"></p></div>
+    </div>
+  </div>
 </form>
-  </div>
-  </div>
 </div>
 
 <script src="js/bootstrap.min.js"></script>
