@@ -78,7 +78,7 @@ a{
     height: auto;
     background-color: rgba(4, 252, 16, 0.678);
     float: right;
-    font-size: 1.35vw;
+    font-size: 1.3vw;
     padding: 3%;
     
 }
@@ -101,4 +101,9 @@ input[type=number]{
     margin-left: 35%;
     
 }
+}
+.footer{
+    color: white;
+    font-size: 1.2vw;
+    margin-top: 2%;
 }
