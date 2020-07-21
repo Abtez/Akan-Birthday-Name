@@ -18,7 +18,7 @@
 
 @media only screen and (min-width: 768px){
 body{
-    background-image: url("/image/gh.jpg");
+    background-image: url("./image/gh.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: black;
