@@ -13,59 +13,82 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="icon" href="image/ghana-flag-round-icon-32.png" type="image/png">
-<title>Ghana Akan Name Birthday Generator</title>
+<title>AKAN NAMES</title>
 </head>
 <body>
 
-  <div class="container-fluid">
+<div class="container-fluid">
 
-<h1 class="text-responsive">Ghana Akan Birthday<small style="color: rgb(232, 253, 42);">Name Generator</small></h1>
+  <h1 class="text-responsive">GHANAIAN AKAN NAMES</h1>
 
+    <div class="row text-responsive" id="navy">
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav justify-content-between w-100">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">More Info</a></li>
+            <li><a href="https://abzed.github.io/Portfolio/about.html" target="_blank">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
 
+    <br>
 
- <p class="text-responsive" id="text1">Would you like to find out your Akan Name. Look no further. This site will match your birthday to 
-   your <span style="font-style: italic;">AKAN</span> name.
-    Fill the form below and click the submit button to proceed.
- </p>
+    <div class="container" id="one">
+      <p>The Akan people of Ghana frequently name their children after the
+         day of the week they were born and the order in which they were born.
+          These "day names" have further meanings concerning the soul and 
+          character of the person. Knowing which Akan names to give your 
+          children will help you observe the traditions of your people. 
+          You may not have a lot of power concerning what name your child
+           gets as the day they are born and the circumstances surrounding 
+           their birth could determine what name they get.</p>
+    </div>
 
+    <div class="container" id="two">
 
-  <h3 class="text-responsive">Fill In The Form Below To Know Your Akan Name</h3>
-  <p id="fill" class="text-center text-responsive">"Click the submit button after filling the form"</p>
-
-<form onsubmit="return compute(event)" autocomplete="off">
+      <p class="text-center">Fill the form below then click submit to know the akan name<br> of 
+        any day of the calender</p>
+        <form onsubmit="return compute(event)" autocomplete="off">
   
-  <div class="genders text-responsive text-center" id="gender">
-    <label class="label text-responsive">Gender</label>
-      
-  <div class="gender-gender">
-     <div class="males text-responsive">
-      <input type="radio" name="gender" id="male" value="male" required>
-      <label for="male">&nbsp;&nbsp;Male</label>
-  
+          <div class="genders text-responsive text-center" id="gender">
+            <label style="color: black;font-size: 1.6vw;" class="label text-responsive">Gender</label>
+              
+          <div class="gender-gender">
+             <div class="males text-responsive">
+              <input type="radio" name="gender" id="male" value="male" required>
+              <label for="male">&nbsp;&nbsp;Male</label>
+          
+        
+          <div class="fe-male text-responsive">
+              <input type="radio" name="gender" value="female" id="female" required>
+              <label for="female">&nbsp;&nbsp;Female</label>
+           </div>
+        </div>
+      </div>
 
-  <div class="fe-male text-responsive">
-      <input type="radio" name="gender" value="female" id="female" required>
-      <label for="female">&nbsp;&nbsp;Female</label>
-   </div>
-</div>
-</div>
-</div>
+      <div class="row">
+        <div class="col-md-12">
+      <div class="inputs text-responsive" style="margin-top: 4%;">
+        <p>DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" required></p>
+        <p>MONTH (1-12)<input type="number" value=" " name="month" id="month" required></p>
+        <p>YEAR (Min-1900)<input value=" " type="number" name="year" id="year" required></p>
+      </div>
 
-<div class="row">
-  <div class="col-md-12 bg-success">
-<div class="inputs text-responsive" style="margin-top: 4%;">
-  <p>ENTER DAY (1-31)<input type="number" value=" " name="day" class="quantity" id="day" size="3"></p>
-  <p>ENTER MONTH (1-12)<input type="number" value=" " name="month" id="month" size="3"></p>
-  <p>ENTER YEAR (eg 1980)<input value=" " type="number" name="year" id="year" size="4"></p>
-</div>
-
-<p class="text-responsive text-center" id="submit"><input type="Submit" value="Submit"><input type="reset" value="Clear"></p>
-<div class="footer text-center text-responsive">Copyright (c) 2020 Abzed Abdul Mohammed</div>
-
+      <div class="row text-center" id="last">
+          <p class="text-responsive text-center" style="padding: 3%;" id="submit"><input type="Submit" value="Submit">
+            <input type="reset" value="Clear"></p>
+      </div>
+    </div>
+  <div id="display" class="text-responsive"><p>Your AKAN Name Is :</p> <p style="font-size: 1.7vw;font-weight: bolder;" id="result"></p></div>
+    </div>
+  </div>
 </form>
-  </div>
-  </div>
 </div>
+</div>
+<div class="footer text-responsive text-center">Copyright (c) 2020 Abzed Abdul Mohammed</div>
+
 
 <script src="js/bootstrap.min.js"></script>
 <script src="script.js"></script>
