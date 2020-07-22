@@ -52,10 +52,6 @@ h1{
     
 }
 
-ul{
-   background-color: rgba(238, 18, 18, 0.712);
-}
-
 a{
     text-decoration-style: none;
     color: black;
@@ -65,7 +61,8 @@ a{
 }
 
 #one{
-    background-color: #d4ba25be;
+    color: white;
+    background-color: #22211dbe;
     width: 45%;
     font-size: 1.5vw;
     padding: 2%;
@@ -76,10 +73,11 @@ a{
 #two{
     width: 50%;
     height: auto;
-    background-color: rgba(4, 252, 16, 0.678);
+    color: white;
+    background-color: #22211dbe;
     float: right;
     font-size: 1.3vw;
-    padding: 3%;
+    padding: 2.43%;
     
 }
 
@@ -99,8 +97,9 @@ input[type=number]{
 
 #last{
     margin-left: 35%;
-    
+    color: black;
 }
+
 }
 .footer{
     color: white;
