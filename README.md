@@ -63,13 +63,3 @@ Email : ibraabzed@gmail.com
 Slack : Abzed Abdul Mohammed
 
 Whatsapp : +254759507042
-
-*****
-
-## LICENSE
-
-[MIT License Information.](https://github.com/Abzed/Akan-Birthday-Name/blob/master/License)
-
-
-
-
